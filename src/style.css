@@ -1,0 +1,62 @@
+body * {
+  padding: 0px;
+  margin: 0px;
+}
+.feedbackWrapper {
+  background-color: #e6e9fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.starComponentWrapper {
+  box-sizing: border-box;
+  background-color: white;
+  width: min(90%, 48.44rem);
+  height: min(75vw, 24.63rem);
+  border-radius: 1rem;
+  box-shadow: 0.7rem 0.7rem 3px rgba(255, 255, 255, 0.386);
+  padding: min(6vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.starComponentTitle {
+  width: min(80%, 28.63rem);
+  font-family: "Merriweather", serif;
+  color: #0f172a;
+  font-size: min(4vw, 1.5rem);
+  text-align: center;
+  font-weight: bold;
+}
+.starComponentRatingMessage {
+  font-family: "Poppins", sans-serif;
+  color: #374151;
+  text-align: center;
+  height: 3rem;
+  font-size: min(3vw, 1.13rem);
+}
+.starComponentRatingButtons {
+  width: min(90%, 34.25rem);
+  height: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.starComponentRatingButtons svg {
+  width: 4.56rem;
+  height: 5.5rem;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .starComponentRatingMessage {
+    height: 40%;
+  }
+  .starComponentRatingButtons {
+    gap: 0.5rem;
+  }
+}
